@@ -13,7 +13,6 @@ module.exports = {
         if (nodeType !== "FormattedMessage") {
           return;
         }
-        console.log(node);
         if (!node.attributes.find((attr) => attr.name.name === "description")) {
           context.report({
             node: node,
